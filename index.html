@@ -9,109 +9,68 @@
   </head>
   <body>
     <div class="container">
-      <h1>Your Perfect Vacation Awaits!</h1>
-
-      <p> Tell us a little about yourself so we can find the best vacation spot for your upcoming trip:</p>
+      <h1>Backpack PDX!</h1>
+      <p class=lead> A tool to help Portlanders find awesome backpacking trips.</p>
+      <p> Ready to hit the trail? Answer a few questions and we'll tell you where to go:</p>
       <form>
-        <h2>What do you want to do during this trip?</h2>
-        <div class="checkbox">
+        <h2>How much backpacking experience do you have?</h2>
+        <div class="radio">
           <label>
-            <input type="radio" name="whatDo" value="rest" id="rest">
-            I want to rest and relax as much as possible.
+            <input type="radio" name="Experience" id="Experience1" value="a">
+            None- I've never been before.
           </label>
         </div>
-        <div class="checkbox">
+        <div class="radio">
           <label>
-            <input type="checkbox" value="">
-            I'd prefer a mix of relaxation and activities.
+            <input type="radio" name="Experience" id="Experience2" value="b">
+            I have some experience but am not an expert.
           </label>
         </div>
-        <div class="checkbox">
+        <div class="radio">
           <label>
-            <input type="checkbox" value="">
-            I'm looking for an adventure!
+            <input type="radio" name="Experience" id="Experience3" value="c">
+            I've got a lot of experience.
           </label>
         </div>
-
+        <h2>How much time do you have available for this trip?</h2>
+        <div class="radio">
+          <label>
+            <input type="radio" name="Days" id="Days1" value="a">
+            I can only be gone two or three days.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="Days" id="Days2" value="b">
+            Probably I can take four or five days off.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="Days" id="Days3" value="c">
+            I have a whole week of vacation!
+          </label>
+        </div>
         <h2>How far do you want to travel?</h2>
-        <div class="checkbox">
+        <div class="radio">
           <label>
-            <input type="checkbox" value="">
-            Somewhere within the United States.
+            <input type="radio" name="Travel" id="Travel1" value="a">
+            A couple hours away from Portland, at most.
           </label>
         </div>
-        <div class="checkbox">
+        <div class="radio">
           <label>
-            <input type="checkbox" value="">
-            Anywhere in North, Central, or South America.
+            <input type="radio" name="Travel" id="Travel2" value="b">
+            I'd be ok with three or four hours of driving.
           </label>
         </div>
-        <div class="checkbox">
+        <div class="radio">
           <label>
-            <input type="checkbox" value="">
-            I would go anywhere in the world.
-          </label>
-        </div>
-
-        <h2>How long can you be away?</h2>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="">
-            A long weekend.
-          </label>
-        </div>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="">
-            About a week.
-          </label>
-        </div>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="">
-            Two weeks or longer.
+            <input type="radio" name="Travel" id="Travel3" value="c">
+            If it's a really special place, I'm willing to drive six or seven hours.
           </label>
         </div>
 
-        <h2>Will you travel alone or with other people?</h2>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="">
-              Just me!
-          </label>
-        </div>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="">
-            I will bring my boyfriend/girlfriend/partner/spouse.
-          </label>
-        </div>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="">
-              Me, my partner, our children and maybe the grandparents.
-          </label>
-        </div>
-
-        <h2>Another Question?</h2>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="">
-              Just me!
-          </label>
-        </div>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="">
-            I will bring my boyfriend/girlfriend/partner/spouse.
-          </label>
-        </div>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="">
-              Me, my partner, our children and maybe the grandparents.
-          </label>
-        </div>
       </form>
       <div id="place1">
         <p>You should go to $<span id="place1"></span> for your next vacation!
