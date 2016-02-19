@@ -5,88 +5,81 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.12.0.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Vacation Sorter</title>
+    <title>BackpackPDX!</title>
   </head>
   <body>
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Backpack PDX!</h1>
+        <p class= "lead">A tool to help Portlanders find awesome backpacking trips in the Pacific Northwest.</p>
+      </div>
+    </div>
+
     <div class="container">
-      <h1>Backpack PDX!</h1>
-      <p class=lead> A tool to help Portlanders find awesome backpacking trips.</p>
-      <p> Ready to hit the trail? Answer a few questions and we'll tell you where to go:</p>
-      <form>
-        <h2>How much backpacking experience do you have?</h2>
-        <div class="radio">
-          <label>
-            <input type="radio" name="Experience" id="Experience1" value="a">
-            None- I've never been before.
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="Experience" id="Experience2" value="b">
-            I have some experience but am not an expert.
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="Experience" id="Experience3" value="c">
-            I've got a lot of experience.
-          </label>
-        </div>
-        <h2>How much time do you have available for this trip?</h2>
-        <div class="radio">
-          <label>
-            <input type="radio" name="Days" id="Days1" value="a">
-            I can only be gone two or three days.
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="Days" id="Days2" value="b">
-            Probably I can take four or five days off.
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="Days" id="Days3" value="c">
-            I have a whole week of vacation!
-          </label>
-        </div>
-        <h2>How far do you want to travel?</h2>
-        <div class="radio">
-          <label>
-            <input type="radio" name="Travel" id="Travel1" value="a">
-            A couple hours away from Portland, at most.
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="Travel" id="Travel2" value="b">
-            I'd be ok with three or four hours of driving.
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="Travel" id="Travel3" value="c">
-            If it's a really special place, I'm willing to drive six or seven hours.
-          </label>
-        </div>
+        <div id="questions">
+          <h2> Ready to hit the trail? Answer a few questions and we'll tell you where to go:</h2>
+          <form>
+            <h3>How much backpacking experience do you have?</h3>
+            <div class="form-group">
+              <label for="Experience">
+              <br>a) None- I've never been before.
+              <br>b) I have some experience but am not an expert.
+              <br>c) I've got a lot of experience.
+              </label>
+              <input id="Experience" class="form-control" type="text">
+            </div>
+            <h3>How much time do you have?</h3>
+            <div class="form-group">
+              <label for="Days">
+              <br>a) I can only be gone two or three days.
+              <br>b) Probably four or five days.
+              <br>c) I've got at least a week.
+              </label>
+              <input id="Days" class="form-control" type="text">
+            </div>
+            <h3>How far do you want to travel to get to the trailhead?</h3>
+            <div class="form-group">
+              <label for="Travel">
+              <br>a) One or two hours away from Portland, at most.
+              <br>b) I'd be ok driving three or four hours.
+              <br>c) If it's a really special place I'm willing to drive six or seven hours.
+              </label>
+              <input id="Travel" class="form-control" type="text">
+            </div>
+            <h3>How many miles per day do you want to hike?</h3>
+            <div class="form-group">
+              <label for="Miles">
+              <br>a) Five or less.
+              <br>b) Up to ten miles each day would be ok.
+              <br>c) I want to cover a lot of ground- at least 10 miles per day!
+              </label>
+              <input id="Miles" class="form-control" type="text">
+            </div>
+            <h3>How difficult should the terrain be?</h3>
+            <div class="form-group">
+              <label for="Difficulty">
+              <br>a) As easy as possible.
+              <br>b) Some challenges and elevation change is fine.
+              <br>c) I want a workout!
+              </label>
+              <input id="Difficulty" class="form-control" type="text">
+            </div>
+
         <button type="submit" class="btn">Tell me where to go!</button>
+      </div>
       </form>
 
       <div id="place1">
-        <p>You should go to $<span id="place1"></span> for your next vacation!
+        <h2>You should go to Eagle Creek!</h2>
         <!--Add an image of place1 here too if possible!-->
-        </p>
       </div>
       <div id="place2">
-        <p>You should go to $<span id="place2"></span> for your next vacation!
+        <p>You should go to the Three Sisters Wilderness!
         <!--Add an image of place1 here too if possible!-->
-        </p>
       </div>
       <div id="place3">
-        <p>You should go to $<span id="place3"></span> for your next vacation!
+        <p>You should go to the Wonderland Trail!
         <!--Add an image of place1 here too if possible!-->
-        </p>
       </div>
 
     </div>
