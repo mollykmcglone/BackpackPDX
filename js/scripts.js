@@ -13,15 +13,17 @@ $(document).ready(function() {
           counta += 1;
         } else if (answer === "b"){
         countb += 1;
-        } else {
+        } else if (answer === "c"){
         countc += 1;
+        } else if (answer === ""){
+          alert("You forgot to answer!")
         }
     });
 
-    if (counta > countb && counta > countc) {
+    if (counta >= countb && counta >= countc) {
       $("#questions").hide();
       $("#place1").show();
-    } else if (countb > counta && countb > countc){
+    } else if (countb > counta && countb >= countc){
       $("#questions").hide();
       $("#place2").show();
     } else {
