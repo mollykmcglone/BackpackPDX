@@ -10,7 +10,7 @@ This site asks users to answer a series of questions and then suggests a locatio
 
 ## Setup/Installation Requirements
 
-* View site at: http://mollykmcglone.github.io/Portfolio/
+* View site at: http://mollykmcglone.github.io/Vacationsorter/
 * To replicate, clone this repository to your local hard drive using this link: https://github.com/mollykmcglone/Vacationsorter.git
 * Then open the index.html file in your browser or text editor and get to work!
 
