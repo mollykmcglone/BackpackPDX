@@ -9,14 +9,12 @@ $(document).ready(function() {
 
     questions.forEach(function(question) {
       var answer = $("input#" + question).val();
-        if (answer === "a"){
+        if (answer.toUpperCase() === "A"){
           counta += 1;
-        } else if (answer === "b"){
+        } else if (answer.toUpperCase() === "B"){
         countb += 1;
-        } else if (answer === "c"){
+        } else if (answer.toUpperCase() === "C"){
         countc += 1;
-        } else if (answer === ""){
-          alert("You forgot to answer!")
         }
     });
 
