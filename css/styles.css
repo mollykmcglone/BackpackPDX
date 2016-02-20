@@ -1,19 +1,28 @@
 #place1 {
   display: none;
+  margin: 10%;
+  border: 2px solid gray;
+  padding: 10px;
   width: 80%;
-  margin-top: 10%;
+  float: left;
 }
 
 #place2 {
   display: none;
+  margin: 10%;
+  border: 2px solid gray;
+  padding: 10px;
   width: 80%;
-  margin-top: 10%;
+  float: left;
 }
 
 #place3 {
   display: none;
+  margin: 10%;
+  border: 2px solid gray;
+  padding: 10px;
   width: 80%;
-  margin-top: 10%;
+  float: left;
 }
 
 .jumbotron {
@@ -44,7 +53,7 @@ h3 {
 img {
   float: left;
   max-width: 30%;
-  margin-right: 50px;
+  margin-right: 30px;
 }
 
 @media (max-width: 992px){
